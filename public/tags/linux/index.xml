@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux on Raihan Khan</title>
+    <link>http://localhost:1313/tags/linux/</link>
+    <description>Recent content in Linux on Raihan Khan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 12 Jun 2023 10:06:25 +0600</lastBuildDate><atom:link href="http://localhost:1313/tags/linux/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>Linux File Systems</title>
+      <link>http://localhost:1313/posts/linux/linux-file-systems/</link>
+      <pubDate>Mon, 12 Jun 2023 10:06:25 +0600</pubDate>
+      
+      <guid>http://localhost:1313/posts/linux/linux-file-systems/</guid>
+      <description>Directory Structure The directories help us to store the files and locate them when we need them. Also, directories are called folders as they can be assumed of as folders where files reside in the form of a physical desktop analogy. Directories can be organized in a tree-like hierarchy in Linux and several other operating systems.
+The directory structure of Linux is well-documented and defined in the Linux FHS (Filesystem Hierarchy Standard).</description>
+    </item>
+    
+    
+  </channel>
+</rss>
