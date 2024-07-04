@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="bn">
+<html lang="en">
   <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-    <title>অ্যাডভান্সড</title>
+    <title>Bash Utilities</title>
     <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -23,15 +23,20 @@
 
   <link rel="icon" type="image/png" href="/images/site/favicon_hu8d06a445fa315a92acd134aa193a2ef4_18332_42x0_resize_box_3.png" />
 
-<meta property="og:url" content="http://localhost:1313/bn/notes/go/advanced/">
+<meta property="og:url" content="http://localhost:1313/notes/bash/utilities/">
   <meta property="og:site_name" content="Raihan Khan">
-  <meta property="og:title" content="অ্যাডভান্সড">
-  <meta property="og:locale" content="bn">
-  <meta property="og:type" content="website">
+  <meta property="og:title" content="Bash Utilities">
+  <meta property="og:description" content="Delete Golang Build Caches Useful when you have lots of golang projects under a org
+rm -rf ./src/kubedb.dev/*/.go/cache/ Sort top 10 directories with most storage used du -s * | sort -nr | head -n10 install gdu Run godu to analyze disk usage for a specific directory. Use arrow keys on the keyboard to navigate through the file system. It is implemented in the Go programming language, known for its efficiency and performance.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="notes">
 
     
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="অ্যাডভান্সড">
+  <meta name="twitter:title" content="Bash Utilities">
+  <meta name="twitter:description" content="Delete Golang Build Caches Useful when you have lots of golang projects under a org
+rm -rf ./src/kubedb.dev/*/.go/cache/ Sort top 10 directories with most storage used du -s * | sort -nr | head -n10 install gdu Run godu to analyze disk usage for a specific directory. Use arrow keys on the keyboard to navigate through the file system. It is implemented in the Go programming language, known for its efficiency and performance.">
 
     
      
@@ -56,7 +61,7 @@
     </script>
   </head>
 
-  <body class="type-notes kind-section" data-bs-spy="scroll" data-bs-target="#TableOfContents" data-bs-offset="80">
+  <body class="type-notes kind-page" data-bs-spy="scroll" data-bs-target="#TableOfContents" data-bs-offset="80">
     <div class="container-fluid bg-secondary wrapper">
       
       
@@ -102,8 +107,6 @@
 
 
 
-  
-
 
 
 
@@ -122,7 +125,7 @@
       <i data-feather="sidebar"></i>
     </button>
     
-    <a class="navbar-brand" href="/bn">
+    <a class="navbar-brand" href="/">
       
         <img src="/images/site/main-logo_hu8d06a445fa315a92acd134aa193a2ef4_18332_42x0_resize_box_3.png" id="logo" alt="Logo">
       Raihan Khan</a>
@@ -140,7 +143,7 @@
     <div class="collapse navbar-collapse dynamic-navbar" id="top-nav-items">
       <ul class="nav navbar-nav ms-auto">
         <li class="nav-item">
-          <a class="nav-link" href="/bn#home">হোম</a>
+          <a class="nav-link" href="/#home">Home</a>
         </li>
         
           
@@ -149,7 +152,7 @@
               
               
                 <li class="nav-item">
-                  <a class="nav-link" href="/bn#about">আমার-সম্পর্কে</a>
+                  <a class="nav-link" href="/#about">About</a>
                 </li>
               
             
@@ -157,7 +160,7 @@
               
               
                 <li class="nav-item">
-                  <a class="nav-link" href="/bn#skills">দক্ষতা</a>
+                  <a class="nav-link" href="/#skills">Skills</a>
                 </li>
               
             
@@ -165,7 +168,7 @@
               
               
                 <li class="nav-item">
-                  <a class="nav-link" href="/bn#experiences">অভিজ্ঞতা</a>
+                  <a class="nav-link" href="/#experiences">Experiences</a>
                 </li>
               
             
@@ -173,7 +176,7 @@
               
               
                 <li class="nav-item">
-                  <a class="nav-link" href="/bn#education">শিক্ষা জীবন</a>
+                  <a class="nav-link" href="/#projects">Projects</a>
                 </li>
               
             
@@ -186,8 +189,6 @@
               
             
             
-              
-              
             
             
               
@@ -195,7 +196,7 @@
             
           
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">আরো</a>
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 
                 
@@ -218,25 +219,21 @@
                   
                     
                     
-                      <a class="dropdown-item" href="/bn#projects">প্রোজেক্ট</a>
+                      <a class="dropdown-item" href="/#education">Education</a>
                     
                   
                   
                     
                     
-                      <a class="dropdown-item" href="/bn#recent-posts">সাম্প্রতিক-পোস্ট</a>
+                      <a class="dropdown-item" href="/#publications">Publications</a>
                     
+                  
+                  
                   
                   
                     
                     
-                      <a class="dropdown-item" href="/bn#accomplishments">সাফল্য</a>
-                    
-                  
-                  
-                    
-                    
-                      <a class="dropdown-item" href="/bn#achievements">অর্জনসমূহ</a>
+                      <a class="dropdown-item" href="/#achievements">Achievements</a>
                     
                   
               </div>
@@ -248,20 +245,14 @@
         
         
           <li class="nav-item">
-            <a class="nav-link" id="blog-link" href="/bn/posts">পোষ্ট সমূহ</a>
+            <a class="nav-link" id="blog-link" href="/posts">Posts</a>
           </li>
         
         
           <li class="nav-item">
-            <a class="nav-link" id="note-link" href="/bn/notes">নোট সমূহ</a>
+            <a class="nav-link" id="note-link" href="/notes">Notes</a>
           </li>
         
-        
-            
-              <li class="nav-item">
-                <a class="nav-link" href="https://toha-guides.netlify.app/posts/">ডকুমেন্টেশন</a>
-              </li>
-            
         
         
           
@@ -272,13 +263,13 @@
     <a class="nav-link dropdown-toggle" href="#" id="languageSelector" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         
             
-            <span class="flag-icon flag-icon-bd"></span>
+            <span class="flag-icon flag-icon-gb"></span>
         
-        বাংলা
+        English
     </a>
     <div class="dropdown-menu" aria-labelledby="languageSelector">
         
-        <a class="dropdown-item nav-link languages-item" href="/notes/go/advanced">
+        <a class="dropdown-item nav-link languages-item" href="/notes/bash/utilities">
             
                 
                 <span class="flag-icon flag-icon-gb"></span>
@@ -286,7 +277,7 @@
             English
         </a>
         
-        <a class="dropdown-item nav-link languages-item" href="/bn/notes/go/advanced">
+        <a class="dropdown-item nav-link languages-item" href="/bn/notes/bash/utilities">
             
                 
                 <span class="flag-icon flag-icon-bd"></span>
@@ -342,36 +333,22 @@
   <section class="sidebar-section" id="sidebar-section">
     <div class="sidebar-holder">
       <div class="sidebar" id="sidebar">
-        <form class="mx-auto" method="get" action="/bn/search">
-          <input type="text" name="keyword" value="" placeholder="অনুসন্ধান করুন" data-search="" id="search-box" />
+        <form class="mx-auto" method="get" action="/search">
+          <input type="text" name="keyword" value="" placeholder="Search" data-search="" id="search-box" />
         </form>
         <div class="sidebar-tree">
           <ul class="tree" id="tree">
-            <li id="list-heading"><a href="/bn/notes" data-filter="all">নোট সমূহ</a></li>
+            <li id="list-heading"><a href="/notes" data-filter="all">Notes</a></li>
             <div class="subtree">
                 
   
   
   
   
-    
-    
-  
   
     
     <li>
-      <i data-feather="minus-circle"></i><a class="active list-link" href="/bn/notes/go/"> Go</a>
-      
-      <ul class="active">
-        
-  
-  
-  
-  
-  
-    
-    <li>
-      <i data-feather="plus-circle"></i><a class=" list-link" href="/bn/notes/go/basic/"> বেসিক</a>
+      <i data-feather="plus-circle"></i><a class=" list-link" href="/notes/go/"> Go</a>
       
       <ul class="">
         
@@ -381,64 +358,8 @@
   
   
     
-    <li><a class=" list-link" href="/bn/notes/go/basic/introduction/" title="পরিচিতি">পরিচিতি</a></li>
-  
-
-  
-  
-  
-  
-  
-    
-    <li><a class=" list-link" href="/bn/notes/go/basic/types/" title="বেসিক টাইপ সমূহ">বেসিক টাইপ সমূহ</a></li>
-  
-
-
-      </ul>
-    </li>
-  
-
-  
-  
-  
-  
-    
-    
-  
-  
-    
     <li>
-      <i data-feather="minus-circle"></i><a class="active list-link" href="/bn/notes/go/advanced/"> অ্যাডভান্সড</a>
-      
-      <ul class="active">
-        
-  
-  
-  
-  
-  
-    
-    <li><a class=" list-link" href="/bn/notes/go/advanced/files/" title="ফাইল ম্যানিপুলেশন">ফাইল ম্যানিপুলেশন</a></li>
-  
-
-
-      </ul>
-    </li>
-  
-
-
-      </ul>
-    </li>
-  
-
-  
-  
-  
-  
-  
-    
-    <li>
-      <i data-feather="plus-circle"></i><a class=" list-link" href="/bn/notes/bash/"> ব্যাশ</a>
+      <i data-feather="plus-circle"></i><a class=" list-link" href="/notes/go/basic/"> Basics</a>
       
       <ul class="">
         
@@ -448,7 +369,95 @@
   
   
     
-    <li><a class=" list-link" href="/bn/notes/bash/basic/" title="ভেরিয়েবল">ভেরিয়েবল</a></li>
+    <li><a class=" list-link" href="/notes/go/basic/introduction/" title="Introduction">Introduction</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/notes/go/basic/types/" title="Basic Types">Basic Types</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/notes/go/basic/flow-control/" title="Flow Control">Flow Control</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li>
+      <i data-feather="plus-circle"></i><a class=" list-link" href="/notes/go/advanced/"> Advanced</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/notes/go/advanced/files/" title="File Manipulation">File Manipulation</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+    
+    
+  
+  
+    
+    <li>
+      <i data-feather="minus-circle"></i><a class="active list-link" href="/notes/bash/"> Bash</a>
+      
+      <ul class="active">
+        
+  
+  
+  
+  
+    
+    
+  
+  
+    
+    <li><a class="active list-link" href="/notes/bash/utilities/" title="Utilities">Utilities</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/notes/bash/basic/" title="Variables">Variables</a></li>
   
 
 
@@ -470,24 +479,43 @@
 <section class="content-section" id="content-section">
   <div class="content container-fluid" id="content">
     <div class="container-fluid note-card-holder" id="note-card-holder">
-      
-      
-        
-          <!-- Condition -->
+      <!-- delete go caches -->
 <div class="note-card ">
     <div class="item">
-        <h5 class="note-title"><span>Condition</span></h5>
+        <h5 class="note-title"><span>Delete Golang Build Caches</span></h5>
         
             <div class="card">
-                <div class="card-body"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> <span style="color:#a6e22e">day</span> <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;sunday&#34;</span> <span style="color:#f92672">||</span> <span style="color:#a6e22e">day</span> <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;saturday&#34;</span> {
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">rest</span>()
-</span></span><span style="display:flex;"><span>} <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">day</span> <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;monday&#34;</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#a6e22e">isTired</span>() {
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">groan</span>()
-</span></span><span style="display:flex;"><span>} <span style="color:#66d9ef">else</span> {
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">work</span>()
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> <span style="color:#a6e22e">_</span>, <span style="color:#a6e22e">err</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">doThing</span>(); <span style="color:#a6e22e">err</span> <span style="color:#f92672">!=</span> <span style="color:#66d9ef">nil</span> {
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">&#34;Uh oh&#34;</span>)
+                <div class="card-body"><p>Useful when you have lots of golang projects under a org</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>rm -rf ./src/kubedb.dev/*/.go/cache/
+</span></span></code></pre></div></div>
+            </div>
+        
+    </div>
+</div>
+
+<!-- Condition -->
+<div class="note-card ">
+    <div class="item">
+        <h5 class="note-title"><span>Sort top 10 directories with most storage used</span></h5>
+        
+            <div class="card">
+                <div class="card-body"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>du -s * | sort -nr | head -n10
+</span></span></code></pre></div></div>
+            </div>
+        
+    </div>
+</div>
+
+<!-- Condition -->
+<div class="note-card ">
+    <div class="item">
+        <h5 class="note-title"><span>install gdu</span></h5>
+        
+            <div class="card">
+                <div class="card-body"><p>Run godu to analyze disk usage for a specific directory. Use arrow keys on the keyboard to navigate through the file system.
+It is implemented in the Go programming language, known for its efficiency and performance.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo apt install gdu
+</span></span><span style="display:flex;"><span>gdu
 </span></span></code></pre></div></div>
             </div>
         
@@ -495,11 +523,6 @@
 </div>
 
 
-        
-      
-    </div>
-    <div class="paginator">
-      
     </div>
   </div>
 </section>
@@ -534,8 +557,6 @@
   
 
   
-  
-    
   
 
   
@@ -573,7 +594,7 @@
       <div class="row text-start">
         
         <div class="col-md-4 col-sm-12">
-          <h5>নেভিগেশন</h5>
+          <h5>Navigation</h5>
           
           <ul>
               
@@ -582,7 +603,7 @@
                   
                 
                 <li class="nav-item">
-                  <a class="smooth-scroll" href="http://localhost:1313/bn/#about">আমার-সম্পর্কে</a>
+                  <a class="smooth-scroll" href="http://localhost:1313/#about">About</a>
                 </li>
               
               
@@ -591,7 +612,7 @@
                   
                 
                 <li class="nav-item">
-                  <a class="smooth-scroll" href="http://localhost:1313/bn/#skills">দক্ষতা</a>
+                  <a class="smooth-scroll" href="http://localhost:1313/#skills">Skills</a>
                 </li>
               
               
@@ -600,7 +621,7 @@
                   
                 
                 <li class="nav-item">
-                  <a class="smooth-scroll" href="http://localhost:1313/bn/#experiences">অভিজ্ঞতা</a>
+                  <a class="smooth-scroll" href="http://localhost:1313/#experiences">Experiences</a>
                 </li>
               
               
@@ -609,7 +630,7 @@
                   
                 
                 <li class="nav-item">
-                  <a class="smooth-scroll" href="http://localhost:1313/bn/#projects">প্রোজেক্ট</a>
+                  <a class="smooth-scroll" href="http://localhost:1313/#projects">Projects</a>
                 </li>
               
               
@@ -618,7 +639,7 @@
                   
                 
                 <li class="nav-item">
-                  <a class="smooth-scroll" href="http://localhost:1313/bn/#education">শিক্ষা জীবন</a>
+                  <a class="smooth-scroll" href="http://localhost:1313/#education">Education</a>
                 </li>
               
               
@@ -627,8 +648,10 @@
                   
                 
                 <li class="nav-item">
-                  <a class="smooth-scroll" href="http://localhost:1313/bn/#recent-posts">সাম্প্রতিক-পোস্ট</a>
+                  <a class="smooth-scroll" href="http://localhost:1313/#publications">Publications</a>
                 </li>
+              
+              
               
               
                 
@@ -636,21 +659,10 @@
                   
                 
                 <li class="nav-item">
-                  <a class="smooth-scroll" href="http://localhost:1313/bn/#accomplishments">সাফল্য</a>
-                </li>
-              
-              
-                
-                
-                  
-                
-                <li class="nav-item">
-                  <a class="smooth-scroll" href="http://localhost:1313/bn/#achievements">অর্জনসমূহ</a>
+                  <a class="smooth-scroll" href="http://localhost:1313/#achievements">Achievements</a>
                 </li>
               
             
-              
-                
               
             
           </ul>
@@ -659,15 +671,29 @@
         
         
         <div class="col-md-4 col-sm-12">
-          <h5>আমার সাথে যোগাযোগ করুনঃ</h5>
+          <h5>Contact me:</h5>
           <ul>
             
               
-                <li><span>ইমেইল: </span> <span>johndoe@example.com</span></li>
+                <li><a href=mailto:raihankhanraka@gmail.com target="_blank" rel="noopener">
+                  <span><i class="fas fa-envelope"></i></span> <span>raihankhanraka@gmail.com</span>
+                </a></li>
               
             
               
-                <li><span>ফোন: </span> <span>&#43;0123456789</span></li>
+                <li><a href=https://github.com/raihankhan target="_blank" rel="noopener">
+                  <span><i class="fab fa-github"></i></span> <span>raihankhan</span>
+                </a></li>
+              
+            
+              
+                <li><a href=https://www.linkedin.com/in/raihankhanraka target="_blank" rel="noopener">
+                  <span><i class="fab fa-linkedin"></i></span> <span>Raihan Khan</span>
+                </a></li>
+              
+            
+              
+                <li><span><i class="fas fa-phone-alt"></i></span> <span>&#43;8801521331536</span></li>
               
             
           </ul>
@@ -680,7 +706,7 @@
     
     <hr />
     <div class="container">
-      <p id="disclaimer"><strong>দায় বিজ্ঞপ্তি:</strong> এই থিমটি এমআইটি লাইসেন্সের অধীনে। সুতরাং, আপনি এটি অ-বাণিজ্যিক, বাণিজ্যিক বা ব্যক্তিগত ব্যবহারের জন্য ব্যবহার করতে পারবেন। থিম লেখকের কোনও অনুমতি ছাড়াই আপনি থিমটি সংশোধন বা বিতরণ করতে পারবেন। তবে থিম লেখক কোনও ওয়্যারেন্টি সরবরাহ করবে না বা থিমের যে কোনও সমস্যার জন্য কোনও দায়বদ্ধতা গ্রহণ করবেন না।</p>
+      <p id="disclaimer"><strong>Liability Notice:</strong> This theme is under MIT license. So, you can use it for non-commercial, commercial, or private uses. You can modify or distribute the theme without requiring any permission from the theme author. However, the theme author does not provide any warranty or takes any liability for any issue with the theme.</p>
     </div>
     
     
@@ -693,9 +719,9 @@
             Toha
           </a>
         </div>
-        <div class="col-md-4 text-center">© 2020 Copyright.</div>
+        <div class="col-md-4 text-center">© Raihan Khan, 2023 Copyright.</div>
         <div class="col-md-4 text-end">
-          <a id="hugo" href="https://gohugo.io/" target="_blank" rel="noopener">পাওয়ারড বাই
+          <a id="hugo" href="https://gohugo.io/" target="_blank" rel="noopener">Powered by
           <img
             src="/images/hugo-logo.svg"
             alt="Hugo Logo"

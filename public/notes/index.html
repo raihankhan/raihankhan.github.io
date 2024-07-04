@@ -437,6 +437,15 @@
   
   
     
+    <li><a class=" list-link" href="/notes/bash/utilities/" title="Utilities">Utilities</a></li>
+  
+
+  
+  
+  
+  
+  
+    
     <li><a class=" list-link" href="/notes/bash/basic/" title="Variables">Variables</a></li>
   
 
@@ -763,7 +772,50 @@
         
       
         
+          <!-- delete go caches -->
+<div class="note-card ">
+    <div class="item">
+        <h5 class="note-title"><span>Delete Golang Build Caches</span></h5>
         
+            <div class="card">
+                <div class="card-body"><p>Useful when you have lots of golang projects under a org</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>rm -rf ./src/kubedb.dev/*/.go/cache/
+</span></span></code></pre></div></div>
+            </div>
+        
+    </div>
+</div>
+
+<!-- Condition -->
+<div class="note-card ">
+    <div class="item">
+        <h5 class="note-title"><span>Sort top 10 directories with most storage used</span></h5>
+        
+            <div class="card">
+                <div class="card-body"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>du -s * | sort -nr | head -n10
+</span></span></code></pre></div></div>
+            </div>
+        
+    </div>
+</div>
+
+<!-- Condition -->
+<div class="note-card ">
+    <div class="item">
+        <h5 class="note-title"><span>install gdu</span></h5>
+        
+            <div class="card">
+                <div class="card-body"><p>Run godu to analyze disk usage for a specific directory. Use arrow keys on the keyboard to navigate through the file system.
+It is implemented in the Go programming language, known for its efficiency and performance.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo apt install gdu
+</span></span><span style="display:flex;"><span>gdu
+</span></span></code></pre></div></div>
+            </div>
+        
+    </div>
+</div>
+
+
         
       
         
